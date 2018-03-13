@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="600.0" maxWidth="900.0" minHeight="300.0" minWidth="300.0" prefHeight="600.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.ProcessPreviewScreen">
+    <children>
+
+        <Pane prefHeight="520.0" prefWidth="600.0" style="-fx-background-color: #e6fcff;">
+            <children>
+                <Label layoutX="173.0" layoutY="122.0" text="Zdjęcia zostały przetworzone.">
+                    <font>
+                        <Font name="Arial Bold" size="18.0"/>
+                    </font>
+                </Label>
+
+                <Button layoutX="179.0" layoutY="207.0" mnemonicParsing="false" onAction="#onClickOtworzFolder"
+                        style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6),5,0.0,0,1); -fx-background-color: linear-gradient(#6082b1,#2a3e58);"
+                        text="Otwórz folder zawierający" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0"/>
+                    </font>
+                </Button>
+
+                <Button layoutX="206.0" layoutY="360.0" mnemonicParsing="false" onAction="#onClickWgrajNowe"
+                        style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6),5,0.0,0,1); -fx-background-color: linear-gradient(#6082b1,#2a3e58);"
+                        text="Wgraj nowe zdjęcie" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0"/>
+                    </font>
+                </Button>
+                <Button layoutX="227.0" layoutY="284.0" mnemonicParsing="false" onAction="#otworzZdjecie"
+                        style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6),5,0.0,0,1); -fx-background-color: linear-gradient(#6082b1,#2a3e58);"
+                        text="Otwórz zdjęcie" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0"/>
+                    </font>
+                </Button>
+            </children>
+
+        </Pane>
+
+        <Pane layoutY="520.0" prefHeight="80.0" prefWidth="600.0" style="-fx-background-color: #26444f;">
+            <children>
+                <Button fx:id="koniec" layoutX="490.0" layoutY="20.0" mnemonicParsing="false" onAction="#onClickKoniec"
+                        style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6),5,0.0,0,1); -fx-background-color: linear-gradient(#6082b1,#2a3e58);"
+                        text="Koniec" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0"/>
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+    </children>
+
+</AnchorPane>

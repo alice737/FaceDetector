@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="600.0" maxWidth="900.0" minHeight="300.0" minWidth="300.0" prefHeight="600.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.ChooseFileScreen">
+    <children>
+
+        <Pane prefHeight="520.0" prefWidth="600.0" style="-fx-background-color: #e6fcff;">
+            <children>
+
+                <Label layoutX="50.0" layoutY="50.0" text="Krok 1: Wybierz zdjęcie do przetworzenia">
+                    <font>
+                        <Font name="Arial" size="18.0"/>
+                    </font>
+                </Label>
+
+                <Button layoutX="222.0" layoutY="140.0" mnemonicParsing="false" onAction="#onClickWybierzPliki"
+                        style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6),5,0.0,0,1); -fx-background-color: linear-gradient(#6082b1,#2a3e58);"
+                        text="Wybierz zdjęcie" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0"/>
+                    </font>
+                </Button>
+
+                <Label layoutX="50.0" layoutY="280.0" text="Krok 2: Wybierz miejsce zapisu przetworzonego zdjęcia">
+                    <font>
+                        <Font name="Arial" size="18.0"/>
+                    </font>
+                </Label>
+
+                <Button layoutX="198.0" layoutY="361.0" mnemonicParsing="false" onAction="#onClickWybierzMiejsceZapisu"
+                        style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6),5,0.0,0,1); -fx-background-color: linear-gradient(#6082b1,#2a3e58);"
+                        text="Wybierz miejsce zapisu" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0"/>
+                    </font>
+                </Button>
+            </children>
+
+        </Pane>
+
+        <Pane layoutY="520.0" prefHeight="80.0" prefWidth="600.0" style="-fx-background-color: #26444f;">
+            <children>
+                <Button layoutX="490.0" layoutY="20.0" mnemonicParsing="false" onAction="#onClickDalej"
+                        style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6),5,0.0,0,1); -fx-background-color: linear-gradient(#6082b1,#2a3e58);"
+                        text="Dalej" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0"/>
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+    </children>
+
+
+</AnchorPane>

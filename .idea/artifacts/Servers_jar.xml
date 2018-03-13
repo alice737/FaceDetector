@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Servers:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Servers_jar</output-path>
+    <root id="archive" name="FaceDetector.jar">
+      <element id="module-output" name="FaceDetector" />
+      <element id="extracted-dir" path="D:/intelliJ/opencv/opencv/build/java/opencv-331.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
